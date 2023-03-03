@@ -1,0 +1,38 @@
+.hero {
+  background-color: $blue;
+  margin: 24px 25px;
+  padding: 50px 15px;
+  color: $white;
+  height: 321px;
+  border-radius: 8px;
+  position: relative;
+  box-sizing: border-box;
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  &.with_hot {
+    .hero__content {
+      transform: translate(-50%,-70%);
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .hero {
+    margin: 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero {
+    margin: 10px;
+
+    &__content {
+      width: 90%;
+    }
+  }
+}

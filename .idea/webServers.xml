@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="45114c2d-588c-403a-aa84-705698b86904" name="TEst_Dubai" url="http://ftp.lita.in.ua">
+        <fileTransfer rootFolder="/domains/test2.lita.in.ua/wp-content/themes/test" host="ftp.lita.in.ua" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

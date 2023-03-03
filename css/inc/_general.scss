@@ -1,0 +1,100 @@
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+  font-family: $font;
+}
+
+.page-title {
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 700;
+  margin: 0;
+  font-family: $font;
+}
+
+.title-section {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 40px;
+  font-family: $font;
+}
+
+.acf-map {
+  width: 100%;
+  height: 270px;
+  margin: 20px 0;
+}
+
+// Fixes potential theme css conflict.
+.acf-map img {
+  max-width: inherit !important;
+}
+
+
+.hide {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  z-index: -1;
+}
+
+.btn {
+  background-color: $lightblue;
+  border: 1px solid $lightblue;
+  color: $white;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  display: inline-block;
+  &:hover {
+    background-color: $white;
+    color: $lightblue;
+  }
+}
+
+
+// Style category links
+.cat_link {
+  color: $white;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin-right: 5px;
+  border: 1px solid;
+  transition: all .3s ease;
+
+  &-first {
+    background-color: $darckblue;
+    border-color: $darckblue;
+  }
+
+  &-second {
+    background-color: $lightblue;
+    border-color: $lightblue;
+  }
+
+  &:hover {
+    background-color: $white;
+
+    &.cat_link-first {
+      color: $darckblue;
+    }
+
+    &.cat_link-second {
+      color: $lightblue;
+    }
+  }
+}

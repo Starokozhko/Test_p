@@ -1,0 +1,162 @@
+.contact-form__wrapper {
+  width: 500px;
+  height: 550px;
+  background-color: $white;
+}
+
+article .object {
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  .thumbnail {
+    width: 100%;
+    max-width: 65%;
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+    .links {
+      display: flex;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+  }
+}
+.object__costs {
+  width: 100%;
+  max-width: 30%;
+  &__label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $darckgray;
+    margin: 24px 0;
+  }
+  .price {
+    font-size: 32px;
+    font-weight: 700;
+    color: $text_color;
+    margin-bottom: 8px;
+  }
+  .price-usd {
+    font-size: 16px;
+    color: $text_color;
+    margin: 8px 0 60px;
+  }
+}
+
+.object__information {
+  width: 100%;
+  max-width: 65%;
+}
+
+.object__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: $text_color;
+  margin: 0 0 8px;
+}
+.object__map {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $text_color;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  text-decoration: none;
+  transition: color .3s ease;
+  svg {
+    margin-right: 8px;
+    path {
+      transition: stroke .3s ease;
+    }
+  }
+  &:hover {
+    color: $lightblue;
+    svg path {
+      stroke: $lightblue;
+    }
+  }
+}
+
+.object__description {
+  padding: 20px 0;
+  border-top: 1px solid #DFDFDF;
+  border-bottom: 1px solid #DFDFDF;
+  display: flex;
+  color: $lightblue;
+  .details-item {
+    margin-right: 5%;
+    p {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    span {
+      font-size: 14px;
+      line-height: 24px;
+      color: $text_color;
+    }
+    i {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .bads {
+    i {
+      background-image: url(../images/bads-blue.svg);
+    }
+  }
+  .baths {
+    i {
+      background-image: url(../images/baths-blue.svg);
+    }
+  }
+  .square {
+    i {
+      background-image: url(../images/square-blue.svg);
+    }
+  }
+}
+
+.object__list {
+  display: grid;
+  grid-template-columns: repeat(2, 190px);
+  //grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+
+  p {
+    margin: 0;
+    color: $text_color;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .list-label {
+    font-weight: 600;
+  }
+  .list-value {
+    font-weight: 400;
+  }
+}
+
+.main-content {
+    .category_slider {
+      padding: 0;
+      .title-section {
+        padding: 0;
+      }
+    }
+  .real-estate-objects {
+    margin: 0 -15px;
+  }
+}
